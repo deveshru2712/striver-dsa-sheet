@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "iostream": "cpp",
+    "chrono": "cpp",
+    "functional": "cpp",
+    "ratio": "cpp",
+    "string_view": "cpp",
+    "editor.formatOnSave": true,
+    "clang-format.executable": "/absolute/path/to/clang-format"
+  }
+}
