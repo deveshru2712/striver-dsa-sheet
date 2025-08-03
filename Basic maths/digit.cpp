@@ -1,24 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void sovle(int n){
-    vector<int> digits ;
-    int rem = 0;
-
-    while(n>0){
-        n=n/10; 
-        rem=n%10;
-        digits.push_back(rem);     
+void solve(int n) {
+    vector<int> digits;
+    
+    if (n == 0) {
+        digits.push_back(0); 
+    } else {
+        while (n > 0) {
+            int rem = n % 10; 
+            digits.push_back(rem);
+            n = n / 10; 
+        }
     }
-    for(int a:digits) cout<<a;
+    
+    
+    reverse(digits.begin(), digits.end());
+    
+    for (int a : digits) {
+        cout << a;
+    }
 }
 
-int main(){
+int main() {
     int n;
-    cin>>n;
-    // get the digits from the numbers
-    
-    sovle(n);
-
+    cin >> n;
+    solve(n);
     return 0;
 }
