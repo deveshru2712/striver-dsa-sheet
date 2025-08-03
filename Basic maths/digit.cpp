@@ -14,10 +14,12 @@ void solve(int n) {
         }
     }
     
+    
     reverse(digits.begin(), digits.end());
     
-    for (int a : digits) cout << a<<" ";
-    cout<<"\n";
+    for (int a : digits) {
+        cout << a;
+    }
 }
 
 int main() {
